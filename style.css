@@ -1,12 +1,86 @@
 * {
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+	box-sizing: border-box;
+	font-family: "Lato", sans-serif;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 /* Add styles here! */
+header {
+	border-bottom: 4px solid gray;
+}
+
+main {
+	background-color: rgb(146, 146, 146);
+	padding: 20px;
+}
+
+.max-width-wrapper {
+	height: 50%;
+	max-width: 600px;
+	max-height: fit-content;
+	margin: 0 auto;
+}
+
+.intro-chunk {
+	margin-left: 20px;
+	max-width: 300px;
+}
+
+p {
+	padding: 10px 0;
+}
+
+.title {
+	padding-top: 110px;
+	padding-bottom: 40px;
+}
+
+.card {
+	margin-top: 100px;
+	background-color: white;
+	padding: 20px 26px;
+}
+
+.indented-heading {
+	background-color: rgb(255, 196, 0);
+	width: fit-content;
+	margin-left: -36px;
+	margin-top: -14px;
+	padding: 16px 26px;
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom: 4px solid rgb(163, 125, 0);
+}
+
+.green {
+	color: rgb(58, 167, 82);
+}
+.bold {
+	font-weight: bold;
+}
+.grey-bkg {
+	background-color: gray;
+}
+
+@media (max-width: 767px) {
+	.max-width-wrapper {
+		max-width: unset;
+		width: 100%;
+		margin: 50px 0;
+	}
+	.indented-heading {
+		margin-left: -26px;
+		margin-top: -12px;
+	}
+	main {
+		padding: 0;
+	}
+	.card {
+		margin-top: 20px;
+	}
+}
